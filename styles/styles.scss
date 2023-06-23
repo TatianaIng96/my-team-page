@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Space+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap&family=Montserrat:wght@600");
+
+/* Variables*/
+$poppins: 'Poppins', sans-serif;
+
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+.wrapper {
+margin: 0 auto;
+}
+
+
+
+.header {
+    flex-wrap: wrap;
+
+    h1{
+        font-family: "PT Serif";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: -0.045em;
+        
+        color: #060606;
+    }
+    
+    h2 {
+        font-family: $poppins;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        
+        text-transform: uppercase;
+        
+        color: #000000;
+    }
+    
+    p {
+        font-family: $poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+.flex {
+    display: inline-flex;
+}
+
+.flex-header {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(345px, 1fr)
+    );
+    gap: 30px;
+}
+
+.figures-wrappers{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+figure .role {
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #000000;
+    writing-mode: vertical-rl;
+  }
+  
+  figure figcaption {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    color: #000000;
+  }
+
+@media screen and (min-width: 600px) {
+    .wrapper {
+        max-width: 1440px;
+    }
+    
+    header {
+        width: 100%;
+        margin-top: 110px;
+    }
+
+    header > .header-1 {
+        text-align: center;
+        margin-left: -5%;
+    }
+
+    header > .header-2 {
+        margin-left: 30%;
+    }
+
+    main {
+        margin-top: 95px;
+    }
+    
+    .figures-wrappers {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .figures-wrappers {
+    height: 515px;;
+    }
+
+    figure img {
+     width: 238px;
+    }
+
+    figure figcaption {
+        margin-top: 15px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    figure .role {
+        margin-left: 10px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    #profile-2,
+    #profile-5 {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+      margin: 71px 12px 0;
+    }
+    header p {
+      font-size: 14px;
+      line-height: 21px;
+      text-justify: auto;
+    }
+    .header h2 {
+      margin-top: 100px;
+    }
+    
+    main {
+        margin-top: 50px;
+        margin: 0.5rem;
+        gap: 30px;
+    }
+    .figuress-wrappers {
+      margin: 0 19px;
+    }
+    figure img {
+      width: calc(100vw * 0.37);
+      min-width: 138.72px;
+    }
+    figure figcaption {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  
+    figure .role {
+      margin-left: 6px;
+      font-size: 10px;
+      line-height: 13px;
+    }
+    
+    #profile-2,
+    #profile-4,
+    #profile-6 {
+      margin-top: 48px;
+    }
+  }
+
+  footer {
+    width: 100%;
+    margin: 100px 0 20px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #a9a9a9;
+    text-align: center;
+  }
