@@ -24,7 +24,7 @@ Users should be able to:
 
 # Make It Real - My Team Page
 
-<img src="./design/desktop-preview.jpg" width="700">
+<img src="./assets/desktop-preview.jpg" width="700">
 
 ## Reto
 
