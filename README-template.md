@@ -64,6 +64,7 @@ Los diseños se crearon con los siguientes anchos:
 - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
 - Weights: 500
 
+
 ### Screenshot
 ![](./assets/captura-mobile%20(3).jpeg)
 ![](./assets/captura-mobile%20(1).jpeg)
