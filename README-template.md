@@ -69,35 +69,52 @@ Los diseños se crearon con los siguientes anchos:
 ![](./assets/captura-mobile%20(3).jpeg)
 ![](./assets/captura-mobile%20(1).jpeg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+.
 
 
-## My process
+## Mi proceso
 
-### Built with
+### Lo construi con:
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
+- Semantica HTML5
+- Propiedades de estilos sass
+- CSS propiedades
+- Flexbox 
+- Diseño responsive
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Aprendí a utilizar los estilos sass con html ademas de agregar el resposive con @media querys y tambien con grids
 
-To see how you can add code snippets, see below:
+```css
+  @media screen and (min-width: 600px) {
+    .wrapper {
+        max-width: 1440px;
+    }
+  }
+```
+
+```css
+  .flex-header {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(345px, 1fr)
+    );
+    gap: 30px;
+  }
+```
+
+tambien aprendí a utilizar la etiqueta figure la cual permite manipular la imagen que envuelve
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+  <figure id="profile-2">
+      <div class="flex">
+          <img src="/assets/photo_2.png">
+          <div class="role">Art Director</div>
+      </div>
+      <figcaption>Saba Cabrera</figcaption>
+  </figure>
 ```
 ```js
 const proudOfThisFunc = () => {
@@ -105,23 +122,18 @@ const proudOfThisFunc = () => {
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+### Continuar desarrollando
 
-### Continued development
+Me gustaria enfocare bien en aprender el diseño responvive, este aún no me queda muy claro, apesar que que hago busquedas y las aplico a mi codigo y fuciona, a mi no me queda muy claro como hacerlo ahorrando código
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+### recursos
 
-### Useful resources
+- [resource 1](https://developer.mozilla.org/es/docs/Web/HTML/Element/figcaption) - este recurso fue muy importante porque aprendí a manipular una figura de todos los moos posibles, ademas de agregarles titulos debajo y arriba, vertical y horizontalmente.
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+Leidy Tatiana Cardona
 
+Yo me inspire en un proyecto encontrado en la web escrito por Hibiki Taguchi
 
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
