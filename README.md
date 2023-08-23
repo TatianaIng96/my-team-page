@@ -95,3 +95,4 @@ While the current version of the app is functional, there are several areas that
 - Make improvements to the styles to make it look more visually appealing
 
 ## Author :nerd_face:
+Leidy Tatiana Cardona 
